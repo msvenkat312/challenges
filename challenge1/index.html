@@ -1,21 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Article</title>
+	<title>Challenge 1</title>
 </head>
 <body>
+	<div>
+	<div>
+	<img id="drawers" src="images/drawers.jpg">
+	</div>
+	<div>
+	<img id="white" src="white.jpg">
+	<p id="matter"><b>Shift the overall look and feel by<br> adding these wonderful touches <br> to furniture in your home</b></p>
+	<p id="matter2">Ever been in a room and felt like <br>something was missing? Perhaps it felt<br> slightly bare and uninviting. I've got some<br>simple tips to help you make any room feel <br>complete.</p>
+	<img id="avatar" src="images/avatar-michelle.jpg">
+	<p id="name"><b>Michelle Appleton</b></p>
+	<p id="date">28 Jun 2020</p>
+	<div class="tooltip"><img id="share" src="images/icon-share.svg">
+	 <span class="tooltiptext"><span id="datashare">S H A R E</span> &emsp;<span id="iconso"><a href="https://www.facebook.com/search/top?q=michelle%20appleton"><img src="images/icon-facebook.svg"></a>  &emsp;   <a href="https://twitter.com/search?q=michelle%20appleton&src=typed_query"><img src="images/icon-twitter.svg"></a>  &emsp;   <a href="https://in.pinterest.com/"><img src="images/icon-pinterest.svg"></a></span> &emsp; </span>
+	</div>
+	</div>
+	</div>
+	<style>
+		@media only screen and (min-width: 1000px)
+		{
+			body{
+			background-color: #ECF5F5;
+		}
+			#drawers{
+			height: 300px;
+			position: absolute;
+			top: 350px;
+			left: 500px;
+			border-top-left-radius: 15px;
+			border-bottom-left-radius: 15px;
+		}		
+			#white{
+			height: 300px;
+			width: 480px;
+			position: absolute;
+			top: 350px;
+			left: 870px;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			border-color: white;
+		}	
+			#matter{
+			font-size: 140%;
+			position: absolute;
+			top: 370px;
+			left: 920px;
+			font-family: helvetica;
+			color: #5A5F5F;
+		}
+			#matter2{
+			font-size: 90%;
+			position: absolute;
+			top: 470px;
+			left: 920px;
+			color: #779393;
+			font-family: helvetica;
+		}
+			#avatar{
+			border-radius: 50%;
+			height: 40px;
+			position: absolute;
+			top: 580px;
+			left: 920px;
+		}
+			#name{
+			position: absolute;
+			top: 570px;
+			left: 980px;
+			font-size: 80%;
+			color: #5A5F5F;
+		}
+			#date{
+			position: absolute;
+			top: 590px;
+			left: 980px;
+			font-size: 80%;
+			color: #779393;
+		}
+			#share{
+			height: 15px;
+			position: absolute;
+			top: 575px;
+			left: 1270px;
+			border: solid;
+			border-color: #ECF5F5;
+			border-radius: 50%;
+			border-width: 200%;
+			background-color: #ECF5F5;
+			padding: 6px;
+			font-size: 80%;
+			color: #779393;
+		}
+		#share:hover{
+			height: 15px;
+			position: absolute;
+			top: 575px;
+			left: 1270px;
+			border: solid;
+			border-color: #ECF5F5;
+			border-radius: 50%;
+			border-width: 200%;
+			background-color: #4A5151;
+			padding: 6px;
+			font-size: 80%;
+			color: #779393;
+		}
+.tooltip {
+  position: relative;
+  box-shadow: 5px 10px 10px;
+ 
+}
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 225px;
+  background-color: #49687A;
+  color: #779393;;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 5px;
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-  
+  /* Position the tooltip */
+  position: absolute;
+  top: 490px;
+  left: 1169px;
+  z-index: 1;
+  font-size: 90%;
+  padding-bottom: 25px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width:10px;
+  border-style: solid;
+  border-color: #49687A transparent transparent transparent;
+  font-size: 90%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#datashare{
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+#iconso{
+	position: relative;
+	bottom: -3px;
+	left: 60px;
+}
+#shareicone{
+	position: relative;
+	top: 20px;
+	left: 120px;
+	 z-index:0;
+	 fill: #49687A; 
+}
+			div{
+			box-shadow: 20px 10px #D6E1E1;
+			font-family: helvetica;
+		}
+	}
+		@media only screen and (max-width: 768px)
+	{
+		body{
+			background-color: #ECF5F5;
+		}
+			#drawers{
+			width: 270px;
+			position: absolute;
+			top: 50px;
+			left:140px;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}		
+			#white{
+			height: 255px;
+			width: 270px;
+			position: absolute;
+			top: 250px;
+			left: 140px;
+			border-color: white;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}	
+			#matter{
+			font-size: 90%;
+			position: absolute;
+			top: 260px;
+			left: 165px;
+			font-family: helvetica;
+			color: #5A5F5F;
+			line-height: 1.4;
+		}
+			#matter2{
+			font-size: 70%;
+			position: absolute;
+			top: 330px;
+			left: 165px;
+			color: #779393;
+			font-family: helvetica;
+			line-height: 1.6;
+		}
+			#avatar{
+			border-radius: 50%;
+			height: 37px;
+			position: absolute;
+			top: 455px;
+			left: 165px;
+		}
+			#name{
+			position: absolute;
+			top: 445px;
+			left: 210px;
+			font-size: 80%;
+			color: #5A5F5F;
+		}
+			#date{
+			position: absolute;
+			top: 462px;
+			left: 210px;
+			font-size: 80%;
+			color: #779393;
+		}
+			#share{
+			height: 15px;
+			position: absolute;
+			top: 450px;
+			left: 346px;
+			border: solid;
+			border-color: #ECF5F5;
+			border-radius: 50%;
+			border-width: 200%;
+			background-color: #ECF5F5;
+			padding: 6px;
+			font-size: 80%;
+			color: #779393;
+			z-index: 10;
+		}
+		#share:hover{
+			height: 15px;
+			position: absolute;
+			top: 450px;
+			left: 346px;
+			border: solid;
+			border-color: #ECF5F5;
+			border-radius: 50%;
+			border-width: 200%;
+			background-color: #ECF5F5;
+			padding: 6px;
+			font-size: 80%;
+			color: #779393;
+		}
+.tooltip {
+  position: relative;
+  box-shadow: 5px 10px 10px;
+ 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  height: 10px;
+  width: 260px;
+  background-color: #49687A;
+  color: #779393;;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius:6px;
+  padding: 20px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: 440px;
+  left: 132px;
+  z-index: 1;
+  font-size: 80%;
+  padding-bottom: 25px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width:10px;
+  border-style: solid;
+  border-color:  transparent transparent transparent;
+  font-size: 90%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#datashare{
+	position: relative;
+	left: -20px;
+	bottom:  7px;
+}
+#shareicon{
+	position: absolute;
+	top: 13px;
+	right: 23px;
+	border-color: #ECF5F5;
+			border-radius: 50%;
+			border-width: 200%;
+			background-color: #ECF5F5;
+			padding: 6px;
+			font-size: 80%;
+			color: #779393;
+}
+#iconso{
+	position: relative;
+	left: -25px;
+	bottom: 3px;
+}
+			div{
+			box-shadow: 20px 10px #D6E1E1;
+			font-family: helvetica;
+		}
+	}
+	</style>
+
+
 </body>
 </html>
