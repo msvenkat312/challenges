@@ -1,9 +1,9 @@
 # CHALLENGE 1 - Article
 
-![Design preview for the Article preview component coding challenge](./screenshots/desktop_site.png)
-![Design preview for the Article preview component coding challenge](./screenshots/desktop_site_on_hover.png)
-![Design preview for the Article preview component coding challenge](./screenshots/mobile_site.png)
-![Design preview for the Article preview component coding challenge](./screenshots/mobile_site_on_hover.png)
+![Design preview for the Article preview component coding challenge](./screenshots/desktop-design.png)
+![Design preview for the Article preview component coding challenge](./screenshots/desktop-active-state.png)
+![Design preview for the Article preview component coding challenge](./screenshots/mobile-design.png)
+![Design preview for the Article preview component coding challenge](./screenshots/mobile-active-state.png)
 
 ## Welcome! 👋
 
